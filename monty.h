@@ -38,3 +38,22 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+void func push(stack_t **,unsigned int);
+void func pall (stack_t **,unsigned int);
+void func pint (stack_t **,unsigned int);
+void func pop (stack_t **,unsigned int);
+void func swap (stack_t **,unsigned int);
+void func add (stack_t **,unsigned int);
+void func nop (stack_t **,unsigned int);
+void func sub (stack_t **,unsigned int);
+void func div (stack_t **,unsigned int);
+void func mul (stack_t **,unsigned int);
+void func mod (stack_t **,unsigned int);
+void func pchar(stack_t **,unsigned int);
+void func pstr (stack_t **,unsigned int);
+void func rotl (stack_t **,unsigned int);
+void func rotr (stack_t **,unsigned int);
+void func stack (stack_t **,unsigned int);
+void func Queues (stack_t **,unsigned int);
+#endif
