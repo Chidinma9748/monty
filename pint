@@ -1,0 +1,18 @@
+#include "monty.h"
+/**
+ * func pint - prints thevalue at the top of the stack
+ * @stack - pointer to the top of the stack
+ * @line_number: line_number
+ * Return: nil
+*/
+
+void func print (stack_t **stack, unsigned int line_number)
+{
+	if (stack == NULL || *stack == NULL)
+        {
+
+              func printf(stderr, "L%u: can't pint, stack empty\n", line_number);
+              exit(EXIT_FAILURE);
+        }
+        printf("%d\n", (*stack)->n);
+}
